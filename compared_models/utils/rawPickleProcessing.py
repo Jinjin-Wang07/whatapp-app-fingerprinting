@@ -9,8 +9,8 @@ def extract_features(input_df):
     """
         Extract features as in Identifie what are you doing paper from dataframe
     """
-    df_uplink = input_df[input_df["Direction"] == 0]
-    df_downlink = input_df[input_df["Direction"] == 1]
+    df_uplink = input_df[input_df["Direction"] == 1]
+    df_downlink = input_df[input_df["Direction"] == 0]
     def extract(df):
         features = {}
         features["num"] = df.shape[0]
